@@ -31,7 +31,7 @@ namespace realstate.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+       // [Authorize]
         [EnableRateLimiting("CreatePolicy")]
         public async Task<IActionResult> Create([FromBody] CreatePropertyDto dto)
         {
